@@ -16,6 +16,7 @@ const {
 
 const router = express.Router();
 
+
 router.post('/register', validateRequest(userRegistrationSchema), register);
 router.post('/login', validateRequest(userLoginSchema), login);
 router.post('/refresh', validateRequest(refreshTokenSchema), refreshToken);
