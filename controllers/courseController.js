@@ -1,5 +1,6 @@
 const Course = require('../models/Course');
 
+
 const getAllCourses = async (req, res, next) => {
   try {
     const {
@@ -140,6 +141,8 @@ const deleteCourse = async (req, res, next) => {
     next(error);
   }
 };
+
+
 
 module.exports = {
   getAllCourses,
