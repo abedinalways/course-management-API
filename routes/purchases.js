@@ -9,6 +9,7 @@ const {
 
 const router = express.Router();
 
+
 router.post('/', auth, purchaseCourse);
 router.get('/my', auth, getUserPurchases);
 router.get('/', adminAuth, getAllPurchases);
